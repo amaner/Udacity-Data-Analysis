@@ -238,7 +238,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
@@ -255,7 +255,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="s1">r&#39;~/Udacity-Data-Analysis/P0-chopstick-length/chopstick-effectiveness.csv&#39;</span>
@@ -274,7 +274,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -678,7 +678,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">dataFrame</span><span class="p">[</span><span class="s1">&#39;Food.Pinching.Efficiency&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -692,7 +692,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -717,7 +717,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">meansByChopstickLength</span> <span class="o">=</span> <span class="n">dataFrame</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Chopstick.Length&#39;</span><span class="p">)[</span><span class="s1">&#39;Food.Pinching.Efficiency&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -734,7 +734,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -799,7 +799,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Causes plots to display within the notebook rather than in a new window</span>
@@ -1032,7 +1032,7 @@ OIGYmVkhTiBmZlbI/wdTSePiS5V7SAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="6.-Based-on-the-scatterplot-created-from-the-code-above,-interpret-the-relationship-you-see.-What-do-you-notice?">6. Based on the scatterplot created from the code above, interpret the relationship you see. What do you notice?<a class="anchor-link" href="#6.-Based-on-the-scatterplot-created-from-the-code-above,-interpret-the-relationship-you-see.-What-do-you-notice?">&#182;</a></h4><p>In general, the efficiency - for these adult college students - is inversely related with chopstick length.  In other words, the efficiency decreases as the length increases.  However, the peak efficiency occurs at about 240mm, so this would be the recommended length for adults in this population (cost considerations aside).</p>
+<p>Since the peak of the graph occurs at 240mm, 240mm chopsticks perform best for this group of thirty-one male college junior students.</p>
 
 </div>
 </div>
@@ -1042,8 +1042,88 @@ OIGYmVkhTiBmZlbI/wdTSePiS5V7SAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="In-the-abstract-the-researchers-stated-that-their-results-showed-food-pinching-performance-was-significantly-affected-by-the-length-of-the-chopsticks,-and-that-chopsticks-of-about-240-mm-long-were-optimal-for-adults.">In the abstract the researchers stated that their results showed food-pinching performance was significantly affected by the length of the chopsticks, and that chopsticks of about 240 mm long were optimal for adults.<a class="anchor-link" href="#In-the-abstract-the-researchers-stated-that-their-results-showed-food-pinching-performance-was-significantly-affected-by-the-length-of-the-chopsticks,-and-that-chopsticks-of-about-240-mm-long-were-optimal-for-adults.">&#182;</a></h3><h4 id="7a.-Based-on-the-data-you-have-analyzed,-do-you-agree-with-the-claim?">7a. Based on the data you have analyzed, do you agree with the claim?<a class="anchor-link" href="#7a.-Based-on-the-data-you-have-analyzed,-do-you-agree-with-the-claim?">&#182;</a></h4><p>Yes, I agree with this claim.</p>
-<h4 id="7b.-Why?">7b. Why?<a class="anchor-link" href="#7b.-Why?">&#182;</a></h4><p>The peak efficiency - for this sample - occurred at 240mm.</p>
+<h4 id="6.-Based-on-the-scatterplot-created-from-the-code-above,-interpret-the-relationship-you-see.-What-do-you-notice?">6. Based on the scatterplot created from the code above, interpret the relationship you see. What do you notice?<a class="anchor-link" href="#6.-Based-on-the-scatterplot-created-from-the-code-above,-interpret-the-relationship-you-see.-What-do-you-notice?">&#182;</a></h4><p>Efficiency - for these male college junior students - rises with length until reaching its maximum at length 240mm.  Then efficiency drops off as length increases beyond 240mm, falling to a minimum at length 330mm.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="In-the-abstract-the-researchers-stated-that-their-results-showed-food-pinching-performance-was-significantly-affected-by-the-length-of-the-chopsticks,-and-that-chopsticks-of-about-240-mm-long-were-optimal-for-adults.">In the abstract the researchers stated that their results showed food-pinching performance was significantly affected by the length of the chopsticks, and that chopsticks of about 240 mm long were optimal for adults.<a class="anchor-link" href="#In-the-abstract-the-researchers-stated-that-their-results-showed-food-pinching-performance-was-significantly-affected-by-the-length-of-the-chopsticks,-and-that-chopsticks-of-about-240-mm-long-were-optimal-for-adults.">&#182;</a></h3><h4 id="7a.-Based-on-the-data-you-have-analyzed,-do-you-agree-with-the-claim?">7a. Based on the data you have analyzed, do you agree with the claim?<a class="anchor-link" href="#7a.-Based-on-the-data-you-have-analyzed,-do-you-agree-with-the-claim?">&#182;</a></h4><p>If I had only the graph to rely on, I would agree with the claim.  However, a repeated measures ANOVA analysis of the results shows that the 95% confidence intervals for the averages at 240mm and 330mm overlap.  Therefore, I cannot agree with the claim.  (Note: I used <a href="http://www.marsja.se/repeated-measures-anova-using-python/">http://www.marsja.se/repeated-measures-anova-using-python/</a> as a guide when performing this analysis.)</p>
+<h4 id="7b.-Why?">7b. Why?<a class="anchor-link" href="#7b.-Why?">&#182;</a></h4><p>Repeated measures ANOVA analysis:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pyvttbl</span> <span class="kn">as</span> <span class="nn">pt</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pt</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">dataFrame</span><span class="p">)</span>
+<span class="n">aov</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">anova</span><span class="p">(</span><span class="s1">&#39;Food.Pinching.Efficiency&#39;</span><span class="p">,</span><span class="s1">&#39;Individual&#39;</span><span class="p">,[</span><span class="s1">&#39;Chopstick.Length&#39;</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">aov</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Food.Pinching.Efficiency ~ Chopstick.Length
+
+TESTS OF WITHIN SUBJECTS EFFECTS
+
+Measure: Food.Pinching.Efficiency
+        Source                                 Type III    eps      df        MS        F       Sig.      et2_G   Obs.    SE     95% CI   lambda   Obs.  
+                                                  SS                                                                                               Power 
+========================================================================================================================================================
+Chopstick.Length          Sphericity Assumed    106.858       -         5    21.372   5.051   2.623e-04   0.037     31   0.372    0.730    5.220   0.365 
+                          Greenhouse-Geisser    106.858   0.821     4.105    26.033   5.051   7.510e-04   0.037     31   0.372    0.730    5.220   0.326 
+                          Huynh-Feldt           106.858   0.821     4.105    26.033   5.051   7.510e-04   0.037     31   0.372    0.730    5.220   0.326 
+                          Box                   106.858   0.200         1   106.858   5.051       0.032   0.037     31   0.372    0.730    5.220   0.167 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Error(Chopstick.Length)   Sphericity Assumed    634.634       -       150     4.231                                                                      
+                          Greenhouse-Geisser    634.634   0.821   123.142     5.154                                                                      
+                          Huynh-Feldt           634.634   0.821   123.142     5.154                                                                      
+                          Box                   634.634   0.200        30    21.154                                                                      
+
+TABLES OF ESTIMATED MARGINAL MEANS
+
+Estimated Marginal Means for Chopstick.Length
+Chopstick.Length    Mean    Std. Error   95% Lower Bound   95% Upper Bound 
+==========================================================================
+180                24.935        0.722            23.520            26.351 
+210                25.484        0.739            24.035            26.933 
+240                26.323        0.801            24.754            27.892 
+270                24.324        0.667            23.017            25.631 
+300                24.968        0.639            23.715            26.221 
+330                24.000        0.754            22.522            25.478 
+
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As can be seen here, the lower bound for the 95% confidence interval for the average at 240mm is less than the upper bound for the 95% confidence interval for the average at 330mm.  In other words, we cannot conclude that these two means are substantially different.</p>
 
 </div>
 </div>
